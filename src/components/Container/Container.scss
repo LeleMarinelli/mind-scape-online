@@ -1,0 +1,12 @@
+.Fondo {
+  height: 100vh;
+  background-image: url("../../images/fondo.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
