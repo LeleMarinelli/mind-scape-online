@@ -6,7 +6,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  z-index: -2;
+
   @media (max-width: 800px) {
-    display: none;
+    background: transparent;
   }
 }

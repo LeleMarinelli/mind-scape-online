@@ -1,0 +1,19 @@
+.Celular {
+  height: 90%;
+
+  margin: auto;
+  position: relative;
+  bottom: -3em;
+
+  z-index: 1;
+
+  background-image: url("../../images/marco.png");
+  background-position: center;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

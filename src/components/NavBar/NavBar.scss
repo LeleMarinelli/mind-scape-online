@@ -1,68 +1,67 @@
 .header {
   @media (max-width: 800px) {
     background: rgb(0, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 54%,
-      rgba(60, 4, 124, 0.630987429151348) 79%,
-      rgba(83, 0, 179, 1) 100%
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0.4853291658460259) 50%,
+      rgba(0, 0, 0, 0.9251050762101716) 95%
     );
 
     color: white;
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-    display: flex;
+    display: block;
+    flex-direction: column;
 
     align-items: center;
     z-index: 1;
 
-    margin: auto;
+    margin: 0;
 
     width: 100%;
     height: 4em;
 
     position: fixed;
-    top: 3em;
+    top: 5.5em;
 
     h1 {
       display: block;
-      margin-left: 1em;
+
+      position: absolute;
+      top: -2.1em;
+      right: 4em;
+
       white-space: nowrap;
     }
 
     .LogoMarcaTexto {
-      font-size: 3em;
-      margin-left: 0.5em;
-    }
-
-    .topLogo {
-      width: auto;
-      height: 4em;
-      padding: 0.5em 0 0.5em 0;
+      font-size: 3.5em;
+      color: rgb(255, 255, 255);
       position: absolute;
-      left: 2.5em;
+      top: -1.2em;
+      right: 0.5em;
     }
 
     ul {
-      display: none;
+      display: flex;
+      justify-content: space-around;
 
       list-style-type: none;
       width: 100%;
 
       align-items: center;
       padding: 0;
-      margin: 0;
+      margin-top: -0.3em;
 
       li {
-        padding: 0 2em 0 2em;
         color: white;
         transition: transform 1s;
-        font-size: 1em;
-        display: flex;
+        font-size: 2.5em;
 
         &:hover {
-          transform: scale(2);
+          transform: scale(3);
           color: white;
         }
 
@@ -81,61 +80,63 @@
 
   @media (min-width: 800px) {
     background: rgb(0, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 21%,
-      rgba(83, 0, 179, 0.5189426112241772) 73%,
-      rgba(0, 0, 0, 1) 96%
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0.4853291658460259) 50%,
+      rgba(0, 0, 0, 0.9251050762101716) 95%
     );
 
     color: white;
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-    display: flex;
     z-index: 1;
 
-    margin: auto;
-    padding: 0.8em 0 1em 2em;
+    margin: -5em auto;
 
-    width: 100%;
-    height: 5em;
+    width: 40vh;
+    height: 4em;
 
-    position: fixed;
-    top: 3em;
+    position: relative;
+    top: -35em;
 
     h1 {
       display: block;
-    }
-    .LogoMarcaTexto {
       font-size: 3em;
-      margin: 0.1em 0 0 0.5em;
+
+      position: absolute;
+      left: -11em;
+
+      white-space: nowrap;
     }
 
-    .topLogo {
-      padding-top: 0.4em;
-      padding-left: 2em;
+    .LogoMarcaTexto {
+      font-size: 8em;
+      color: rgb(255, 255, 255);
+      position: absolute;
+      top: -0.2em;
+      right: -2.5em;
     }
 
     ul {
       display: flex;
+      justify-content: space-around;
+
       list-style-type: none;
-      margin-left: 3em;
-
-      justify-content: space-between;
-
-      position: absolute;
-      right: 10em;
+      width: 100%;
 
       align-items: center;
+      padding: 0;
+      margin-top: -0.3em;
 
       li {
-        margin: 1em 0 0 4em;
         color: white;
         transition: transform 1s;
-        font-size: 1em;
+        font-size: 2.5em;
+
         &:hover {
-          transform: scale(2);
+          transform: scale(3);
           color: white;
         }
 

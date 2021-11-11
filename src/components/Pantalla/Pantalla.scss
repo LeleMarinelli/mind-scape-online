@@ -1,2 +1,24 @@
-.PantallaContainer {
+.Pantalla {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.pinimg.com/originals/94/db/fe/94dbfe24cb90b6d66c791ba1f6f72bc5.gif");
+  background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 0;
+
+  @media (min-width: 801px) {
+    background-color: blue;
+    height: 88vh;
+    width: 40vh;
+    z-index: 0;
+
+    margin: auto;
+    position: relative;
+    top: -83%;
+
+    border-radius: 2.5em;
+  }
 }
